@@ -30,6 +30,7 @@ export const UseRef = () => {
     const stopTimer = (e) => {
         e.preventDefault()
         clearInterval(timerId.current)
+        //following line seems unnecessary. There's no real reason to reassign timerId.current to an integer from a function
         timerId.current = 0
     }
 
