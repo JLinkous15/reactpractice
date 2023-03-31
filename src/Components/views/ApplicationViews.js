@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from "react-router-dom"
-import { NavBar } from "../NavBar/NavBar"
 import { PracticeHooks } from "../Practice/PracticeHooks"
+import { UseReducer } from "../UseReducer/UseReducer"
 import { UseRef } from "../UseRef/UseRef"
 
 export const ApplicationViews = () => {
@@ -10,6 +10,7 @@ export const ApplicationViews = () => {
         }>
             <Route path="/" element={<PracticeHooks />} />
             <Route path="/useref" element={<UseRef />} />
+            <Route path="/usereducer" element={<UseReducer />} />
         </Route>
     </Routes>
 }
